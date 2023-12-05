@@ -77,9 +77,9 @@ const store = createStore({
       // Event for focus
       socketIo.on('focus', (data) => {
         const element = document.getElementById(data);
-        element?.scrollIntoView({
-            behavior: 'smooth'
-        });
+        // element?.scrollIntoView({
+        //     behavior: 'smooth'
+        // });
 
         element?.classList.add('highlighted');
 

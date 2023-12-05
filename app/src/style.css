@@ -40,3 +40,155 @@ a.router-link-active {
         box-shadow: 0 0 10px rgba(128, 0, 128, 0.5);
     }
 }
+
+.position1{
+    position: absolute;
+    left: 540px;
+    top:100px;
+
+}
+
+.position2{
+    position: absolute;
+    left: 690px;
+    top:100px;
+}
+
+.position3{
+    position: absolute;
+    top:100px;
+    left:850px;
+}
+
+.position4{
+    position: absolute;
+    top:100px;
+    left: 960px;
+}
+
+.position5{
+    position: absolute;
+    top:100px;
+    left:1070px;
+}
+
+.positionvib1{
+    position: absolute;
+    top:650px;
+    left:1630px;
+}
+
+.positionvib2{
+    position: absolute;
+    top:550px;
+    left:1600px;
+}
+
+.positionvib3{
+    position: absolute;
+    top: 150px;
+    left: 1600px;
+}
+
+.positiongew{
+    position: absolute;
+    top:650px;
+    left:1300px;
+}
+
+.positionprell{
+    position: absolute;
+    top:550px;
+    left:1430px;
+}
+
+.positionweiche{
+    position: absolute;
+    top:600px;
+    left: 600px;
+}
+
+.rfid1{
+    position: absolute;
+    bottom: -50px;
+    left:200px;
+}
+
+.rfid6{
+    position: absolute;
+    bottom: 0;
+    left: 900px;
+}
+
+.highlight1{
+    position: absolute;
+    top:480px;
+    left:1700px;
+}
+
+.highlight2{
+    position: absolute;
+    top:230px;
+    left:1450px;
+}
+
+.animated-line {
+    width: 100%;
+    height: 2px; /* Höhe der Linie */
+    background-color: transparent; /* Hintergrundfarbe transparent machen */
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 100%;
+        background-color: rgba(128, 0, 128, 0.7);
+        border-radius: 5px;
+        animation: buildLine 3s linear forwards infinite
+    }
+
+    @keyframes buildLine {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+}
+
+.connection{
+    position: absolute;
+    top:800px;
+    left: 500px;
+}
+
+#lineh1 {
+    position: absolute;
+    right: -100px;
+    height: 10px;
+    background: #5500AA;
+    animation: lineH 2s infinite linear;
+}
+#lineh2 {
+    position: absolute;
+    right: -100px;
+    height: 10px;
+    background: #5500AA;
+    animation: lineH 2s 1s infinite linear;
+}
+
+@keyframes lineH {
+    0% {
+        right: -100px;
+        width: 0%;
+    }
+    100% {
+        right: -100px; /* Hinzugefügt: Endposition 'right' ist 0 */
+        width: 95%;
+        opacity: 0;
+    }
+}
+
+
